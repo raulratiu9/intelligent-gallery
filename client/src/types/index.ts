@@ -1,3 +1,4 @@
 import { RenderCardsProps } from "./home";
+import { FormFieldProps } from "./createPost";
 
-export { RenderCardsProps };
+export type { RenderCardsProps, FormFieldProps };
