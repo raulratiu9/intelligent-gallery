@@ -1,16 +1,5 @@
-import { Card, FormField, Loader } from "../components";
+import { RenderCards, FormField, Loader } from "../components";
 import { useState } from "react";
-import { RenderCardsProps } from "../types";
-
-function RenderCards({ data, title }: RenderCardsProps) {
-  if (data?.length > 0) {
-    return data.map((post: any) => <Card key={post._id} {...post} />);
-  }
-
-  return (
-    <h2 className="mt-5 font-bold text-[#6449ff] text-xl uppercase">{title}</h2>
-  );
-}
 
 export default function Home() {
   const [loading, setLoading] = useState(false);

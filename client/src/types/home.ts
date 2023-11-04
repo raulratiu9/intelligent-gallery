@@ -1,4 +1,4 @@
 export interface RenderCardsProps {
-  data: any;
+  data: unknown;
   title: string;
 }
