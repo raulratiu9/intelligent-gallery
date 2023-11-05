@@ -21,7 +21,7 @@ app.get("/", async (req: Request, res: Response) => {
 
 const startServer = async () => {
   try {
-    connectDB(process.env.MONGODB_URL);
+    connectDB(process.env.MONGODB_URL as string);
   } catch (error) {
     console.log(error);
   }

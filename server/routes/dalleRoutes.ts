@@ -33,7 +33,7 @@ router.route("/").post(async (req, res) => {
 
     res.status(200).json({ image });
   } catch (error) {
-    res.status(404).json(error.response.data.error.message);
+    res.status(404).json(error);
   }
 });
 

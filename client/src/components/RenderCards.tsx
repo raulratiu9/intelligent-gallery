@@ -1,7 +1,7 @@
 import { Card } from ".";
 
 interface Props {
-  data: [];
+  data: any;
   title: string;
 }
 
